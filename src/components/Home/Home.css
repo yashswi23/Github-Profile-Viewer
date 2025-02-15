@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark gradient */
+    color: #fff;
+  }
+  
+  /* Search Form */
+  #form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  #search {
+    width: 320px;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15); /* Less transparency */
+    color: #fff;
+    transition: all 0.3s ease;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #search::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  #search:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Main Content */
+  #Main {
+    background: rgba(255, 255, 255, 0.1); /* Less transparency for readability */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    max-width: 650px;
+    width: 100%;
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #Main:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Card Styles */
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.8rem;
+    background: rgba(255, 255, 255, 0.12); /* Darker card for contrast */
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Avatar */
+  .avtar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .avtar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* User Info */
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-info h2 {
+    margin: 0;
+    font-size: 1.9rem;
+    color: #ddd;
+  }
+  
+  .user-info p {
+    margin: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Stats */
+  .info {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .info li {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .info li:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+  }
+  
+  /* Repositories */
+  #repos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.2rem;
+  }
+  
+  .repo {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .repo:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Error Message */
+  .error {
+    color: #ff6b6b;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
